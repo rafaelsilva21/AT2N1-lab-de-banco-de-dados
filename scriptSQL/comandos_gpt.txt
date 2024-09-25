@@ -1,0 +1,70 @@
+---
+
+1. **Adicionar países com população (2021):**
+   ```plaintext
+   (1,'Australia',25.69)
+   (2,'Belgium',11.59)
+   (3,'Canada',38.23)
+   (4,'China',1412)
+   (5,'France',67.76)
+   (6,'Germany',83.2)
+   (7,'Hong Kong',7.5)
+   (8,'India',1390)
+   (9,'Italy',60)
+   (10,'Japan',126)
+   (11,'Mexico',126)
+   (12,'Russia',146)
+   (13,'Singapore',5.7)
+   (14,'Spain',47)
+   (15,'Sweden',10.4)
+   (16,'Switzerland',8.6)
+   (17,'United Kingdom',67)
+   (18,'United States',331)
+   ```
+
+2. **Adicionar dados de bilionários:**
+   ```plaintext
+   Jeff Bezos,188.0,-2.31,United States,Technology
+   Elon Musk,170.0,0.773,United States,Technology
+   Bernard Arnault,155.0,+40.9,France,Consumer
+   ...
+   Vladimir Lisin,29.2,+5.33,Russia,Industrial
+   ```
+
+3. **Formatar bilionários sem país e indústria:**
+   ```plaintext
+   (1, 'Jeff Bezos', 188.0, -2.31)
+   (2, 'Elon Musk', 170.0, 0.773)
+   ...
+   (n, 'Vladimir Lisin', 29.2, +5.33)
+   ```
+
+4. **Separar indústrias:**
+   ```plaintext
+   (1, 'Technology', 3500.0)
+   (2, 'Consumer', 2500.0)
+   ...
+   ```
+
+5. **Adicionar mais indústrias e valores:**
+   ```plaintext
+   (40, 'Healthcare', 2000.0)
+   (41, 'Telecommunications', 1500.0)
+   ```
+
+6. **Formatar universidades com IDs:**
+   ```plaintext
+   (1, 'University of Oxford', 95.6, 'United Kingdom')
+   (2, 'Stanford University', 94.9, 'United States')
+   ...
+   (50, 'Washington University in St Louis', 71.1, 'United States')
+   ```
+
+7. **Separar cursos sem repetições:**
+   ```plaintext
+   (1, 'Oxford University', 95.6, 'United Kingdom')
+   (2, 'Stanford University', 94.9, 'United States')
+   ...
+   ```
+
+---
