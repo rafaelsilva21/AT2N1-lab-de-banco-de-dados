@@ -72,7 +72,7 @@ CREATE TABLE IF NOT EXISTS Universidade (
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS Curso (
   idCurso INT NOT NULL ,
-  nome VARCHAR(45) NOT NULL ,
+  nome VARCHAR(100) NOT NULL ,
   PRIMARY KEY (idCurso)
 );
 
@@ -83,7 +83,6 @@ CREATE TABLE IF NOT EXISTS Curso (
 CREATE TABLE IF NOT EXISTS Curso_Universidade (
   Curso_idCurso INT NOT NULL ,
   Universidade_idUniversidade INT NOT NULL ,
-  PRIMARY KEY (Curso_idCurso, Universidade_idUniversidade),
   CONSTRAINT fk_idCurso
     FOREIGN KEY (Curso_idCurso)
     REFERENCES Curso(idCurso)
