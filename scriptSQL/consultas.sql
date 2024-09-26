@@ -1,17 +1,20 @@
-select avg(distinct country.populaceMi), avg(distinct University.overallScore) from country JOIN university ON country.idCountry = university.Country_idCountry
-where University.overallScore > 75;
+SELECT MAX(PERSON.NETWORTHBI) FROM PERSON;
+SELECT MIN(INDUSTRY.INCOMESBI) FROM PERSON JOIN INDUSTRY ON PERSON.INDUSTRY_IDINDUSTRY = INDUSTRY.IDINDUSTRY;
 
-select count(distinct country.idCountry)as c, count(distinct university.idUniversity)as u from country JOIN university ON country.idCountry = university.Country_idCountry
-where University.overallScore > 75;
+SELECT AVG(DISTINCT COUNTRY.POPULACEMI), AVG(DISTINCT UNIVERSITY.OVERALLSCORE) FROM COUNTRY JOIN UNIVERSITY ON COUNTRY.IDCOUNTRY = UNIVERSITY.COUNTRY_IDCOUNTRY
+WHERE UNIVERSITY.OVERALLSCORE > 75;
 
-select count(distinct country.idCountry) as c, count(distinct university.idUniversity) as u from country JOIN university ON country.idCountry = university.Country_idCountry
-where University.overallScore > 75 and university.teachingScore > 75;
+SELECT COUNT(DISTINCT COUNTRY.IDCOUNTRY)AS C, COUNT(DISTINCT UNIVERSITY.IDUNIVERSITY)AS U FROM COUNTRY JOIN UNIVERSITY ON COUNTRY.IDCOUNTRY = UNIVERSITY.COUNTRY_IDCOUNTRY
+WHERE UNIVERSITY.OVERALLSCORE > 75;
 
-select country.name, University.name from country JOIN university ON country.idCountry = university.Country_idCountry
-where University.overallScore > 75  and university.teachingScore > 75;
+SELECT COUNT(DISTINCT COUNTRY.IDCOUNTRY) AS C, COUNT(DISTINCT UNIVERSITY.IDUNIVERSITY) AS U FROM COUNTRY JOIN UNIVERSITY ON COUNTRY.IDCOUNTRY = UNIVERSITY.COUNTRY_IDCOUNTRY
+WHERE UNIVERSITY.OVERALLSCORE > 75 AND UNIVERSITY.TEACHINGSCORE > 75;
 
-select Person.fullName, Person.netWorthBi from Person join Industry ON person.Industry_idIndustry = Industry.idIndustry
-where Industria.transacao > 4000
-order by Pessoa.netWorth desc;
+SELECT COUNTRY.NAME, UNIVERSITY.NAME FROM COUNTRY JOIN UNIVERSITY ON COUNTRY.IDCOUNTRY = UNIVERSITY.COUNTRY_IDCOUNTRY
+WHERE UNIVERSITY.OVERALLSCORE > 75  AND UNIVERSITY.TEACHINGSCORE > 75;
 
-select * from country order by populaceMi desc;
+SELECT PERSON.FULLNAME, PERSON.NETWORTHBI FROM PERSON JOIN INDUSTRY ON PERSON.INDUSTRY_IDINDUSTRY = INDUSTRY.IDINDUSTRY
+WHERE INDUSTRY.INCOMESBI > 1000
+ORDER BY PERSON.NETWORTHBI DESC;
+
+SELECT * FROM COUNTRY ORDER BY POPULACEMI DESC;
