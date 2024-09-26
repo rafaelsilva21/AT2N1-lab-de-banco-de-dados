@@ -7,3 +7,6 @@ Modelagem de banco de dados - Destaques de riqueza em 2021
 ### Fontes de Dados
 - [500 Pessoas Mais ricas em 2021](https://www.kaggle.com/datasets/frtgnn/500-richest-people-2021)
 - [Melhores Universidades em 2021](https://www.kaggle.com/datasets/r1chardson/the-world-university-rankings-2011-2023)
+
+#### Relatório do Trabalho
+[Clique aqui..](https://github.com/rafaelsilva21/AT2N1-lab-de-banco-de-dados/blob/main/Relat%C3%B3rio%20do%20Trabalho.pdf)
