@@ -1,5 +1,5 @@
 -- habitantes em milhoes
-INSERT INTO Pais (idPais,nome,qtdHabitantes)
+INSERT INTO Country (idCountry,name,populaceMi)
 VALUES
 (1, 'Australia', 25.69),
 (2, 'Belgium', 11.59),
@@ -54,7 +54,7 @@ VALUES
 (51, 'Zambia', 18.9);
 
 -- valor em bilhoes
-INSERT INTO Industria (idIndustria,nome,transacao)
+INSERT INTO Industry (idIndustry,name,incomesBi)
 VALUES
 (1, 'Technology', 5200),
 (2, 'Consumer', 3400),
@@ -107,7 +107,7 @@ VALUES
 (49, 'Virtual Reality', 15),
 (50, 'Telehealth', 60);
 
-INSERT INTO Pessoa (idPessoa,nomeCompleto,netWorth,ytd,Pais_idPais,Industria_idIndustria)
+INSERT INTO Person (idPerson,fullName,netWorthBi,ytdBi,Country_idCountry,Industry_idIndustry)
 VALUES
 (1, 'Jeff Bezos', 188.0, -2.31, 18, 1),
 (2, 'Elon Musk', 170.0, 0.773, 18, 1),
@@ -162,7 +162,7 @@ VALUES
 (51, 'James Dyson', 29.5, +5.62, 17, 2),
 (52, 'Vladimir Lisin', 29.2, +5.33, 12, 5);
 
-INSERT INTO Universidade (idUniversidade,nome,pontGeral,pontEnsino,pontPesquisa,pontCitacao,Pais_idPais)
+INSERT INTO University (idUniversity,name,overallScore,teachingScore,searchScore,citationScore,Country_idCountry)
 VALUES
 (1, 'University of Oxford',91.2,88.2,93.9,95.1, 17),
 (2, 'Stanford University',94.3,98.3,98.1,99.2, 18),
@@ -215,7 +215,7 @@ VALUES
 (49, 'University of Wisconsin', 67.0,55.5,64.6,83.4, 18),
 (50, 'Washington University in St Louis',69.9,58.9,63.0,88.6, 18);
 
-INSERT INTO Curso (idCurso, nome)
+INSERT INTO Course (idCourse, name)
 VALUES
 (1, 'Accounting & Finance'),
 (2, 'Communication & Media Studies'),
@@ -268,7 +268,7 @@ VALUES
 (49, 'Human Resources Management'),
 (50, 'Blockchain Technology');
 
-INSERT INTO Curso_Universidade (Curso_idCurso, Universidade_idUniversidade)
+INSERT INTO Course_University (Course_idCourse, University_idUniversity)
 VALUES
 (1,1),
 (1,23),
